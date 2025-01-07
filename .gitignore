@@ -1,1 +1,8 @@
 raw_documents/
+docker-compose.yml
+Dockerfile
+.env
+faiss_index/
+newusers.txt
+__pycache__/
+local_data.db

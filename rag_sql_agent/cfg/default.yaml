@@ -1,0 +1,8 @@
+question: Summarize Amazon's financial performance in 2022 without searching in databases
+db_path: local_data.db
+save_table_csv: true
+table_csv_name: entities_table.csv
+faiss_index_name: faiss_index
+documents_download_folder: raw_documents
+openai_model: gpt-3.5-turbo
+openai_embeddings_model: text-embedding-3-large

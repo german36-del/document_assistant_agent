@@ -1,15 +1,15 @@
 [tool.poetry]
-name = "document_assistant_agent"
+name = "rag_sql_agent"
 version = "0.1.0"
 description = "Assistan agent for retrieving useful data fast with agents"
-authors = ["Your Name <your_email@example.com>"]
+authors = ["Germán Ferrando del Rincon <germanferrandodelrincon@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
 requests = "^2.28.1"
-pypdf = "^5.1.0"
+pypdf = ">=3.17"
 transformers = "^4.47.1"
 fitz = "^0.0.1.dev2"
 pillow = "^11.1.0"
@@ -17,9 +17,23 @@ pymupdf = "^1.25.1"
 torch = "2.4.1"
 protobuf = "^5.29.2"
 sentencepiece = "^0.2.0"
+langchain-community = "^0.3.13"
+camelot-py = {extras = ["cv"], version = "^1.0.0"}
+langchain = "^0.3.14"
+openai = "^1.59.3"
+faiss-cpu = "^1.9.0.post1"
+tiktoken = "^0.8.0"
+langchain-experimental = "^0.3.4"
+langgraph = "^0.2.60"
+langchain-openai = "^0.2.14"
+pydantic = "2.9.2"
+sockets = "^1.0.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.2.0"
+
+[tool.poetry.scripts]
+rag_sql_agent = "rag_sql_agent.cfg:entrypoint"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
