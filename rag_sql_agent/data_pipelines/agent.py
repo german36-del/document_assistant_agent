@@ -52,7 +52,7 @@ class LocalLLMAgent:
         self.sql_chain = SQLDatabaseChain.from_llm(self.llm, self.db, verbose=True)
 
         # Initialize tools
-        # TODO: Check if it is better to use here the description or put it into the agent prompt
+        # TODO: Use here the decsription parameter as putting the info in the prompt is old practices.
         tools = [
             StructuredTool.from_function(self.semantic_search_tool),
             StructuredTool.from_function(self.query_sql_tool),
