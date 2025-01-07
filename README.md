@@ -30,7 +30,8 @@ To install **rag_sql_agent** you can clone the repository and use poetry.
 
 ## 🖥️ Usage
 
-**shopwise** can be accessed through both the Command-Line Interface (CLI) and Python code. The default parameters are configured in the `rag_sql_agent/cfg/default.yaml` file, and overwritten by the specified arguments in the CLI or Python calls.
+**rag_sql_agent** can be accessed through both the Command-Line Interface (CLI) and Python code. The default parameters are configured in the `rag_sql_agent/cfg/default.yaml` file, and overwritten by the specified arguments in the CLI or Python calls.
+Do not forget to put your OPENAI_API_KEY as an env variable!!
 
 ### CLI
 
