@@ -48,7 +48,6 @@ This tool may also be used directly in a Python environment, and it accepts the 
 ```python
 from rag_sql_agent import rag_sql_agent
 
-# Find the best price for your shoplist!!
 rag_sql_agent(question="Tell me the 5 companies with more revenue in 2022", db_path="/temp/local_db/db_1.db")
 ```
 
@@ -57,7 +56,6 @@ Also if you want to create more sophisticated agent or a chatbot just import the
 ```python
 from rag_sql_agent import rag_sql_agent
 
-# Find the best price for your shoplist!!
 rag_sql_agent(question="Tell me the 5 companies with more revenue in 2022")
 
 
