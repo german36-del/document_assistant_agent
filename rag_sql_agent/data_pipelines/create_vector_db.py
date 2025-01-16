@@ -36,7 +36,7 @@ def prepare_text_chunks(data):
     return chunks
 
 
-# Step 3: Generate Embeddings and Create FAISS Index
+
 def create_faiss_index(chunks, embeddings_model, faiss_index_path):
     texts = [chunk["content"] for chunk in chunks]
     metadatas = [chunk["metadata"] for chunk in chunks]
