@@ -22,7 +22,6 @@ docs_mapping = {
 }
 
 
-# Step 2: Flatten Data into Text Chunks
 def prepare_text_chunks(data):
     chunks = []
     for file_name, pages in data.items():
@@ -63,9 +62,7 @@ def create_vector_db(embeddings_model, cfg, faiss_index_path):
     extractor = PDFTextExtractor(full_path)
     all_results = extractor.process_all_pdfs()
 
-    # Prepare text chunks
     chunks = prepare_text_chunks(all_results)
 
-    # Create FAISS index
     vectorstore = create_faiss_index(chunks, embeddings_model, faiss_index_path)
     return all_results
